@@ -1,86 +1,43 @@
-/* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
+import calculate from '../logic/calculate';
+import Row from './Row';
 
 class Calculator extends Component {
-  render() {
-    return (
-      <div className="calculator">
-        <div className="cal-body">
-          <div className="result">
-            0
-          </div>
-          <div className="cal-row">
-            <div className="cal-col">
-              AC
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+    handleClick = (e) => {
+      const result = calculate(this.state, e.target.value);
+      this.setState((prev) => ({ ...prev, ...result }));
+    }
+
+    render() {
+      const { next, total, operation } = this.state;
+      return (
+        <div className="calculator">
+          <div className="cal-body">
+            <div className="result">
+              {!total && !operation && !next && 0 }
+              { total && total }
+              { operation && operation }
+              { next && next }
             </div>
-            <div className="cal-col">
-              +/-
-            </div>
-            <div className="cal-col">
-              %
-            </div>
-            <div className="cal-col orange">
-              /
-            </div>
-          </div>
-          <div className="cal-row">
-            <div className="cal-col">
-              7
-            </div>
-            <div className="cal-col">
-              8
-            </div>
-            <div className="cal-col">
-              9
-            </div>
-            <div className="cal-col orange">
-              x
-            </div>
-          </div>
-          <div className="cal-row">
-            <div className="cal-col">
-              4
-            </div>
-            <div className="cal-col">
-              5
-            </div>
-            <div className="cal-col">
-              6
-            </div>
-            <div className="cal-col orange">
-              -
-            </div>
-          </div>
-          <div className="cal-row">
-            <div className="cal-col">
-              1
-            </div>
-            <div className="cal-col">
-              2
-            </div>
-            <div className="cal-col">
-              3
-            </div>
-            <div className="cal-col orange">
-              +
-            </div>
-          </div>
-          <div className="cal-row">
-            <div className="cal-col two-column">
-              0
-            </div>
-            <div className="cal-col">
-              .
-            </div>
-            <div className="cal-col orange">
-              =
-            </div>
+            <Row first="AC" second="+/-" third="%" fourth="÷" color="orange" handleClick={this.handleClick} />
+            <Row first="7" second="8" third="9" fourth="x" color="orange" handleClick={this.handleClick} />
+            <Row first="4" second="5" third="6" fourth="-" color="orange" handleClick={this.handleClick} />
+            <Row first="1" second="2" third="3" fourth="+" color="orange" handleClick={this.handleClick} />
+            <Row first="0" third="." fourth="=" color="orange" handleClick={this.handleClick} />
           </div>
         </div>
-
-      </div>
-    );
-  }
+      );
+    }
 }
 
 export default Calculator;

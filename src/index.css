@@ -40,6 +40,11 @@
   text-align: center;
 }
 
+.btn {
+  border: none;
+  background-color: transparent;
+}
+
 .cal-col {
   padding: 15px 30px;
   width: 70px;

@@ -4,12 +4,20 @@
   padding: 0;
 }
 
+.App {
+  padding: 40px;
+}
+
 .calculator {
   color: black;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 130px;
+  padding: 80px;
+}
+
+.calculator h1 {
+  margin-bottom: 20px;
 }
 
 .cal-body {
@@ -52,4 +60,70 @@
   background-color: #e0e0e0;
   border: 1px solid #bebebe;
   cursor: pointer;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navBar ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.navBar ul li {
+  padding: 10px;
+  text-decoration: none;
+}
+
+.navBar ul li a {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.navBar ul li a:hover {
+  text-decoration: underline;
+}
+
+.home {
+  padding-top: 100px;
+}
+
+.home h1 {
+  margin-bottom: 20px;
+}
+
+.home p {
+  margin-bottom: 20px;
+}
+
+.quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 786px) {
+  .quote {
+    padding: 0;
+    padding-top: 50px;
+    font-size: 20px;
+  }
+
+  .navBar {
+    flex-direction: column;
+  }
+
+  .navBar h1 {
+    text-align: center;
+  }
+
+  .navBar ul {
+    justify-content: center;
+  }
 }

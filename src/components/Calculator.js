@@ -18,6 +18,7 @@ const Calculator = () => {
   return (
     <div className="calculator">
       <div className="cal-body">
+        <h1>Let&apos;s do some math!</h1>
         <div className="result">
           {!total && !operation && !next && 0 }
           { total && total }

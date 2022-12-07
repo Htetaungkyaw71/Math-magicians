@@ -1,16 +1,19 @@
 /* eslint-disable react/prefer-stateless-function */
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react';
 
-
-export class Col extends Component {
+class Col extends PureComponent {
   render() {
+    const {
+      // eslint-disable-next-line react/prop-types
+      name, click, color, wide,
+    } = this.props;
     return (
-            <button value={this.props.name} onClick={this.props.click} className={`cal-col ${this.props.color && this.props.color} ${this.props.wide && this.props.wide}`} >
-                {this.props.name}
-            </button>
-    )
+      // eslint-disable-next-line react/button-has-type
+      <button value={name} onClick={click} className={`cal-col ${color && color} ${wide && wide}`}>
+        {name}
+      </button>
+    );
   }
-
 }
 
-export default Col
+export default Col;

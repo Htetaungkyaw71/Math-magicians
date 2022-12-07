@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="cal-row"
+>
+  <button
+    className="cal-col undefined false"
+  />
+  <button
+    className="cal-col undefined undefined"
+  />
+  <button
+    className="cal-col undefined undefined"
+  />
+</div>
+`;

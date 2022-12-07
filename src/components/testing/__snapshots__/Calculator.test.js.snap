@@ -1,0 +1,173 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="calculator"
+>
+  <div
+    className="cal-body"
+  >
+    <h1>
+      Let's do some math!
+    </h1>
+    <div
+      className="result"
+    >
+      0
+    </div>
+    <div
+      className="cal-row"
+    >
+      <button
+        className="cal-col undefined false"
+        onClick={[Function]}
+        value="AC"
+      >
+        AC
+      </button>
+      <button
+        className="cal-col undefined undefined"
+        onClick={[Function]}
+        value="+/-"
+      >
+        +/-
+      </button>
+      <button
+        className="cal-col undefined undefined"
+        onClick={[Function]}
+        value="%"
+      >
+        %
+      </button>
+      <button
+        className="cal-col orange undefined"
+        onClick={[Function]}
+        value="÷"
+      >
+        ÷
+      </button>
+    </div>
+    <div
+      className="cal-row"
+    >
+      <button
+        className="cal-col undefined false"
+        onClick={[Function]}
+        value="7"
+      >
+        7
+      </button>
+      <button
+        className="cal-col undefined undefined"
+        onClick={[Function]}
+        value="8"
+      >
+        8
+      </button>
+      <button
+        className="cal-col undefined undefined"
+        onClick={[Function]}
+        value="9"
+      >
+        9
+      </button>
+      <button
+        className="cal-col orange undefined"
+        onClick={[Function]}
+        value="x"
+      >
+        x
+      </button>
+    </div>
+    <div
+      className="cal-row"
+    >
+      <button
+        className="cal-col undefined false"
+        onClick={[Function]}
+        value="4"
+      >
+        4
+      </button>
+      <button
+        className="cal-col undefined undefined"
+        onClick={[Function]}
+        value="5"
+      >
+        5
+      </button>
+      <button
+        className="cal-col undefined undefined"
+        onClick={[Function]}
+        value="6"
+      >
+        6
+      </button>
+      <button
+        className="cal-col orange undefined"
+        onClick={[Function]}
+        value="-"
+      >
+        -
+      </button>
+    </div>
+    <div
+      className="cal-row"
+    >
+      <button
+        className="cal-col undefined false"
+        onClick={[Function]}
+        value="1"
+      >
+        1
+      </button>
+      <button
+        className="cal-col undefined undefined"
+        onClick={[Function]}
+        value="2"
+      >
+        2
+      </button>
+      <button
+        className="cal-col undefined undefined"
+        onClick={[Function]}
+        value="3"
+      >
+        3
+      </button>
+      <button
+        className="cal-col orange undefined"
+        onClick={[Function]}
+        value="+"
+      >
+        +
+      </button>
+    </div>
+    <div
+      className="cal-row"
+    >
+      <button
+        className="cal-col undefined two-column"
+        onClick={[Function]}
+        value="0"
+      >
+        0
+      </button>
+      <button
+        className="cal-col undefined undefined"
+        onClick={[Function]}
+        value="."
+      >
+        .
+      </button>
+      <button
+        className="cal-col orange undefined"
+        onClick={[Function]}
+        value="="
+      >
+        =
+      </button>
+    </div>
+  </div>
+</div>
+`;

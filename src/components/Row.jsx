@@ -1,16 +1,20 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react/prefer-stateless-function */
-import React, { Component } from 'react'
-import Col from './Col'
+import React, { Component } from 'react';
+import Col from './Col';
 
 export default class Row extends Component {
   render() {
+    const {
+      first, second, third, fourth, color, handleClick,
+    } = this.props;
     return (
-      <div className='cal-row'>
-            <Col name={this.props.first} wide={this.props.first === "0" &&"two-column"} click={this.props.handleClick}/>
-            {this.props.second && <Col name={this.props.second} click={this.props.handleClick}/> }
-            <Col name={this.props.third} click={this.props.handleClick}/>
-            <Col name={this.props.fourth} color={this.props.color} click={this.props.handleClick}/>
+      <div className="cal-row">
+        <Col name={first} wide={first === '0' && 'two-column'} click={handleClick}/>
+        {second && <Col name={second} click={handleClick}/>}
+        <Col name={third} click={handleClick}/>
+        <Col name={fourth} color={color} click={handleClick}/>
       </div>
-    )
+    );
   }
 }

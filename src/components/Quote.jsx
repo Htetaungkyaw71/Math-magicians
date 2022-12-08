@@ -4,7 +4,7 @@ import React from 'react';
 function Quote() {
   return (
     <div className="quote">
-      William Thurston said: “mathematics is not about numbers, equations, computations or algorithms; it's about understanding.”
+      William Thurston said: mathematics is not about numbers, equations, computations or algorithms; it is about understanding.
     </div>
   );
 }

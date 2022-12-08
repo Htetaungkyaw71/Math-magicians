@@ -10,10 +10,10 @@ export default class Row extends Component {
     } = this.props;
     return (
       <div className="cal-row">
-        <Col name={first} wide={first === '0' && 'two-column'} click={handleClick}/>
-        {second && <Col name={second} click={handleClick}/>}
-        <Col name={third} click={handleClick}/>
-        <Col name={fourth} color={color} click={handleClick}/>
+        <Col name={first} wide={first === '0' && 'two-column'} click={handleClick} />
+        {second && <Col name={second} click={handleClick} />}
+        <Col name={third} click={handleClick} />
+        <Col name={fourth} color={color} click={handleClick} />
       </div>
     );
   }
